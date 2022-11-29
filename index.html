@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <img src="pic1.webp" />
+      <div class="menu-right">
+        <span onclick="myfunction()" class="bar">&#9776;</span>
+        <ul id="menu">
+          <li>Home</li>
+          <li>Curriculum</li>
+          <li>Faq</li>
+          <li>About us</li>
+          <li>Concact us</li>
+          <li>Blog</li>
+          <li class="box">
+            <span>Coheret&nbsp;9Tap to apply</span>
+          </li>
+          <li class="box">Apply to cohert 9</li>
+          <li class="box">Hire From Us</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function myfunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "none" || x.style.display === "") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
